@@ -1,33 +1,28 @@
 
 /**
- * Write a description of class Circle here.
+ * Simple Circle class for InClass Lab05
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Krzysztof Szczuorwski
+ * @version 1.1
+ * @since 10/16/2016
+ * @see https://learn.bcit.ca/d2l/le/content/331960/viewContent/2087631/View
  */
 public class Circle
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Circle
-     */
+    private static int counter  = 0;
+    public static final double DEFAULT_RADIUS = 0;
+    
+    private double radiusInCentimeters;
+    
     public Circle()
     {
-        // initialise instance variables
-        x = 0;
+        this.radiusInCentimeters = DEFAULT_RADIUS;
+        counter++;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    
+    public Circle(int newRadius)
     {
-        // put your code here
-        return x + y;
+        this.radiusInCentimeters = (newRadius < 0 ? DEFAULT_RADIUS : newRadius);
+        counter++;
     }
 }
