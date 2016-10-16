@@ -10,9 +10,8 @@ public class Rectangle
 {
     private static int counter = 0;
     public static final double DEFAULT_LENGTH = 5.0;
-    
     public static final double DEFAULT_WIDTH = 5.0;
-   
+    
     private double rectangleLengthInCm;
     private double rectangleWidthInCm;
     
@@ -74,6 +73,7 @@ public class Rectangle
         this.rectangleWidthInCm = (rectangleWidthInCm < 0 ? DEFAULT_WIDTH : DEFAULT_WIDTH);
     }
     
+    //Public methods
     public boolean isSquare()
     {
         return (rectangleLengthInCm == rectangleWidthInCm ? true : false);
