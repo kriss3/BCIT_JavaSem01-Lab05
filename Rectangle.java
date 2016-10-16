@@ -27,6 +27,39 @@ public class Rectangle
         this.rectangleWidthInCm = DEFAULT_WIDTH;
     }
     
+    /**
+     * Custom constructor for Rectangle class <br>
+     * @param lengthAndWidht of Length and Widdth as Integer
+     */
+    public Rectangle(int lengthAndWidht)
+    {
+        if(lengthAndWidht < 0)
+        {
+            this.rectangleLengthInCm = DEFAULT_LENGTH;
+            this.rectangleWidthInCm = DEFAULT_WIDTH;
+        }
+        else
+        {
+            this.rectangleLengthInCm = this.rectangleWidthInCm = lengthAndWidht;
+        }
+    }
+    
+    /**
+     * Custom constructor for Rectangle class <br>
+     * @param lengthAndWidht of Length and Widdth as Double
+     */
+    public Rectangle(double lengthAndWidht)
+    {
+        if(lengthAndWidht < 0)
+        {
+            this.rectangleLengthInCm = DEFAULT_LENGTH;
+            this.rectangleWidthInCm = DEFAULT_WIDTH;
+        }
+        else
+        {
+            this.rectangleLengthInCm = this.rectangleWidthInCm = lengthAndWidht;
+        }
+    }
     
     /**
      * Custom constructor taking two params for rectangle Length and Width <br>
