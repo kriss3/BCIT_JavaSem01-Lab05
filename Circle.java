@@ -1,4 +1,3 @@
-
 /**
  * Simple Circle class for InClass Lab05
  * 
