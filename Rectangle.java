@@ -200,7 +200,7 @@ public class Rectangle
     }
     
     /**
-     * Public method showing details of the rectagled class (its private members) <br>
+     * Public method showing details of the rectangle class (its private members) <br>
      * It does not take any parameters <br>
      * @return details of rectangle class as String
      */
